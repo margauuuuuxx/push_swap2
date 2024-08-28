@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marlonco <marlonco@students.s19.be>        +#+  +:+       +#+        */
+/*   By: marlonco <marlonco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 14:12:35 by marlonco          #+#    #+#             */
-/*   Updated: 2024/08/28 08:49:16 by marlonco         ###   ########.fr       */
+/*   Updated: 2024/08/28 16:32:35 by marlonco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,14 @@
 # include <fcntl.h>
 # include <sys/stat.h>
 # include <sys/types.h>
+
+typedef struct s_split
+{
+	int		i;
+	int		j;
+	int		k;
+	char	**str;
+}	t_split;
 
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);

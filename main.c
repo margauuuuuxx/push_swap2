@@ -6,7 +6,7 @@
 /*   By: marlonco <marlonco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 08:43:27 by marlonco          #+#    #+#             */
-/*   Updated: 2024/08/28 13:56:00 by marlonco         ###   ########.fr       */
+/*   Updated: 2024/08/28 16:34:41 by marlonco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,5 +91,6 @@ int	main(int argc, char **argv)
 	ft_algorithme_03(&a, &b);
 	ft_lstclear(&a, ft_freecontent);
 	ft_lstclear(&b, ft_freecontent);
+	system("leaks push_swap");
 	return (0);
 }
