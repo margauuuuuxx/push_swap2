@@ -18,14 +18,13 @@ NAME = push_swap
 all: ${NAME}
 
 $(OBJDIR)/%.o: %.c
-	@mkdir -p $(OBJDIR) $(OBJDIR)/sort_algo $(OBJDIR)/checker $(OBJDIR)/sort_operations 
+	@mkdir -p $(OBJDIR) $(OBJDIR)/sort_algo $(OBJDIR)/sort_operations 
 	@${CC} ${CFLAGS} -I ${INCS} -c $< -o $@
 
 ${NAME}: ${OBJS}
 	@${LIB}
 	@${PRINTF}
 	@${CC} ${CFLAGS} -g ${OBJS} -L./libft -lft -L./printf -lftprintf -o ${NAME}
-#  -L./libft -lft
 
 clean:
 	@${RM} -r ${OBJDIR}

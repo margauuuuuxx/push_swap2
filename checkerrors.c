@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   checkerrors.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marlonco <marlonco@students.s19.be>        +#+  +:+       +#+        */
+/*   By: marlonco <marlonco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 08:43:58 by marlonco          #+#    #+#             */
-/*   Updated: 2024/08/28 09:32:06 by marlonco         ###   ########.fr       */
+/*   Updated: 2024/08/28 13:54:45 by marlonco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
 
 #include "push_swap.h"
 
@@ -37,8 +35,8 @@ int	ft_check_elementisint(const char *str)
 	long int	res;
 
 	i = 0;
-	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\v'
-		|| str[i] == '\f' || str[i] == '\r' || str[i] == ' ')
+	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\v' || str[i] == '\f'
+		|| str[i] == '\r' || str[i] == ' ')
 		i++;
 	if (str[i] == '-')
 		is_neg = -1;

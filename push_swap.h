@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marlonco <marlonco@students.s19.be>        +#+  +:+       +#+        */
+/*   By: marlonco <marlonco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 08:43:49 by marlonco          #+#    #+#             */
-/*   Updated: 2024/08/28 10:08:35 by marlonco         ###   ########.fr       */
+/*   Updated: 2024/08/28 13:57:24 by marlonco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PUSH_SWAP_H
-# define FT_PUSH_SWAP_H
+#ifndef PUSH_SWAP_H
+# define PUSH_SWAP_H
 
 # include "libft/libft.h"
 # include "printf/includes/ft_printf.h"
@@ -23,56 +23,55 @@ typedef struct s_data
 	int	closerindex;
 	int	cost;
 	int	element_cost;
-}	t_data;
+}		t_data;
 
-
-//printf lst
+// printf lst
 void	ft_printlst(t_list **a);
 
-//sort algo
-	// algo utils 
+// sort algo
+// algo utils
 int		ft_find_closerindex(t_list **lst, int chunk, int *array);
-	//algo00
+// algo00
 t_list	*ft_findmin(t_list **lst);
 int		ft_check_begin_min(t_list **lst);
 int		ft_elementindex(t_list *element, t_list **lst);
 void	ft_algorithme_00(t_list **a, t_list **b);
-	//algo01
+// algo01
 void	ft_last3(t_list **a, t_list **b);
 int		ft_intchr(int i, int *array, int size);
 void	ft_algorithme_01(t_list **a, t_list **b);
 void	ft_algorithme_03(t_list **a, t_list **b);
-	//simplified
+// simplified
 void	ft_simplified(t_list **a);
-	//push a to b
+// push a to b
 void	ft_push_a_to_b(t_list **a, t_list **b, int *array);
 int		ft_element_lower(t_list **list, int max);
 int		ft_frst_lower(t_list **lst, int chunk);
-	//push b to a
+// push b to a
 void	ft_push_b_to_a(t_list **a, t_list **b, int max_1, int max_2);
 int		ft_elementcost(t_list *element, t_list **lst);
 
-//sort operations
-	//sorto print
+// sort operations
+// sorto print
 void	ft_s(t_list **a, char pile);
 void	ft_ss(t_list **a, t_list **b);
 void	ft_p(t_list **a, t_list **b, char pile);
 void	ft_r(t_list **a, char pile);
 void	ft_rr(t_list **a, t_list **b);
-	//sorto utils 
+// sorto utils
 void	ft_rev_r(t_list **a, char pile);
 void	ft_instructions(char *str, t_list **a, t_list **b);
-	//sorto
+// sorto
 void	ft_swap(t_list **a);
 void	ft_push(t_list **a, t_list **b);
 void	ft_rotate(t_list **a);
 void	ft_reverse_rotate(t_list **lst);
 t_list	*ft_last_element(t_list *lst);
 
-//--checkerrors
+//checkerrors
 int		ft_checkerros(char *element, t_list **lst);
 
-//main
+// main
 int		ft_istrim(t_list **a);
 
 #endif

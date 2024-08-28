@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   sorto_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marlonco <marlonco@students.s19.be>        +#+  +:+       +#+        */
+/*   By: marlonco <marlonco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 09:22:18 by marlonco          #+#    #+#             */
-/*   Updated: 2024/08/28 10:25:37 by marlonco         ###   ########.fr       */
+/*   Updated: 2024/08/28 13:57:44 by marlonco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../push_swap.h"
 

@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marlonco <marlonco@students.s19.be>        +#+  +:+       +#+        */
+/*   By: marlonco <marlonco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 08:43:27 by marlonco          #+#    #+#             */
-/*   Updated: 2024/08/28 09:31:59 by marlonco         ###   ########.fr       */
+/*   Updated: 2024/08/28 13:56:00 by marlonco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "push_swap.h"
 
@@ -22,8 +21,8 @@ int	ft_istrim(t_list **a)
 	element = *a;
 	while (element)
 	{
-		if (element->next && ft_atoi(element->content)
-			> ft_atoi((element->next)->content))
+		if (element->next
+			&& ft_atoi(element->content) > ft_atoi((element->next)->content))
 			return (0);
 		element = element->next;
 	}
@@ -68,10 +67,10 @@ void	ft_parsing(t_list **a, char **argv, int argc)
 			{
 				write(2, "Error\n", 6);
 				ft_lstclear(a, ft_freecontent);
-				exit (1);
+				exit(1);
 			}
 			ft_lstadd_back(a, ft_lstnew(ft_strdup(spl[j])));
-			j ++;
+			j++;
 		}
 		ft_free_spl(spl);
 		i++;
