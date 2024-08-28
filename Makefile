@@ -15,7 +15,7 @@ RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
 NAME = push_swap
 
-all:  ${NAME}
+all: ${NAME}
 
 $(OBJDIR)/%.o: %.c
 	@mkdir -p $(OBJDIR) $(OBJDIR)/sort_algo $(OBJDIR)/checker $(OBJDIR)/sort_operations 
@@ -24,7 +24,8 @@ $(OBJDIR)/%.o: %.c
 ${NAME}: ${OBJS}
 	@${LIB}
 	@${PRINTF}
-	@${CC} ${CFLAGS} -g ${OBJS} -L./libft -L./printf -lft -lftprintf -o ${NAME}
+	@${CC} ${CFLAGS} -g ${OBJS} -L./libft -lft -L./printf -lftprintf -o ${NAME}
+#  -L./libft -lft
 
 clean:
 	@${RM} -r ${OBJDIR}

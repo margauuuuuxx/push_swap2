@@ -6,7 +6,7 @@
 /*   By: marlonco <marlonco@students.s19.be>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 09:22:18 by marlonco          #+#    #+#             */
-/*   Updated: 2024/08/28 09:32:17 by marlonco         ###   ########.fr       */
+/*   Updated: 2024/08/28 10:25:37 by marlonco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,16 @@
 void	ft_rev_r(t_list **a, char pile)
 {
 	ft_reverse_rotate(a);
-	ft_printf("rr%c\n", pile);
+	ft_printf("rr%c", pile);
+	write(1, "\n", 1);
 }
 
 void	ft_rrr(t_list **a, t_list **b)
 {
 	ft_rev_r(a, 'a');
 	ft_rev_r(b, 'b');
-	ft_printf("rrr\n");
+	ft_printf("rrr");
+	write(1, "\n", 1);
 }
 
 void	ft_instructions(char *str, t_list **a, t_list **b)

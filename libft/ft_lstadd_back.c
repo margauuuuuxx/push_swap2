@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marlonco <marlonco@students.s19.be>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 13:58:01 by marlonco          #+#    #+#             */
-/*   Updated: 2024/04/10 16:16:16 by marlonco         ###   ########.fr       */
+/*   Updated: 2024/08/28 10:22:23 by marlonco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,17 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	last->next = new;
 }
 
-void	ft_print_list(t_list **lst)
-{
-	t_list	*current;
+// void	ft_print_list(t_list **lst)
+// {
+// 	t_list	*current;
 
-	current = lst[0];
-	while (current != NULL)
-	{
-		printf("%s\n", (current->content));
-		current = current->next;
-	}
-}
+// 	current = lst[0];
+// 	while (current != NULL)
+// 	{
+// 		printf("%s\n", (current->content));
+// 		current = current->next;
+// 	}
+// }
 /*
 int	main(void)
 {
